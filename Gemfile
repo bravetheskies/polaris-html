@@ -13,4 +13,3 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
-gem "components", git: "https://github.com/jensljungblad/components.git"

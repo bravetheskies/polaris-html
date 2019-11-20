@@ -1,0 +1,10 @@
+<% if url %>
+  <a  href="<%= url %>" 
+  <% if method == :destroy %>
+    data-confirm="Are you sure?" rel="nofollow" data-method="delete" 
+  <%end%> 
+<%else%> 
+  <button <%if disabled%> disabled <%end%>
+    type="<%= submit ? 'submit' : 'button' %>" 
+<% end %> 
+class="Polaris-Button <%= STYLE_CLASS_MAPPINGS[style] %> <%= disabled ? 'Polaris-Button--disabled' : ''%>"> <span class="Polaris-Button__Content"><span class="Polaris-Button__Text"><%= label %></span></span> <% if url %></a><%else%></button><%end%>

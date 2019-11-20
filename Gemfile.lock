@@ -1,14 +1,8 @@
-GIT
-  remote: https://github.com/jensljungblad/components.git
-  revision: d46b7a32f4a3d0d5964555481e5b02230e1f56b6
-  specs:
-    components (0.1.0)
-      rails (>= 5.1.0)
-
 PATH
   remote: .
   specs:
-    polaris-html (0.1.0)
+    polaris-html (0.1.1)
+      actionview-component
       rails (~> 6.0.1)
 
 GEM
@@ -50,6 +44,7 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    actionview-component (1.4.0)
     activejob (6.0.1)
       activesupport (= 6.0.1)
       globalid (>= 0.3.6)
@@ -143,7 +138,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  components!
   polaris-html!
   sqlite3
 
