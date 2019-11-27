@@ -1,9 +1,9 @@
 <div class="Polaris-FormLayout__Item">
   <div class="">
-    <label class="Polaris-Choice" for="<%="#{@form.object.class.to_s.downcase}_#{@field}"%>" >
+    <label class="Polaris-Choice" for="<%="#{form.object.class.to_s.downcase}_#{field}"%>" >
       <div class="Polaris-Choice__Control">
         <div class="Polaris-Checkbox">
-          <%= @form.check_box @field, class: 'Polaris-Checkbox__Input' %>
+          <%= form.check_box field, class: 'Polaris-Checkbox__Input' %>
           <div class="Polaris-Checkbox__Backdrop"></div>
           <div class="Polaris-Checkbox__Icon">
             <span class="Polaris-Icon">
@@ -17,7 +17,7 @@
           </div>
         </div>
       </div>
-      <div class="Polaris-Choice__Label"><%= @label %></div>
+      <div class="Polaris-Choice__Label"><%= label %></div>
       </label>
     </div>
 </div>

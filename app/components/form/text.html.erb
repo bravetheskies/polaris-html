@@ -7,5 +7,8 @@
       <%= form.text_field field , {class: 'Polaris-TextField__Input', placeholder: placeholder} %>
       <div class="Polaris-TextField__Backdrop"></div>
     </div>
+    <% if help %>
+      <div class="Polaris-Labelled__HelpText"><%= help %></div>
+    <% end %>
   </div>
 </div>
