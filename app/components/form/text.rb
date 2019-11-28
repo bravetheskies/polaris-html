@@ -1,8 +1,8 @@
 module Form
   class Text < ActionView::Component::Base
-    attr_reader :form, :field, :placeholder, :help
-    def initialize(form: , field: , placeholder: nil, help: nil)
-      @form, @field, @placeholder, @help = form, field, placeholder, help
+    attr_reader :form, :field, :placeholder, :help_text
+    def initialize(form: , field: , placeholder: nil, help_text: nil)
+      @form, @field, @placeholder, @help_text = form, field, placeholder, help_text
     end
 
   end

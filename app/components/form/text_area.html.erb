@@ -1,0 +1,20 @@
+
+<div class="Polaris-FormLayout__Item">
+  <div class="">
+    <div class="Polaris-Labelled__LabelWrapper">
+      <div class="Polaris-Label"><%= form.label field , class: 'Polaris-Label__Text' %></div>
+    </div>
+    <div class="Polaris-Connected">
+      <div class="Polaris-Connected__Item Polaris-Connected__Item--primary">
+        <div class="Polaris-TextField Polaris-TextField--hasValue Polaris-TextField--multiline">
+          <%= form.text_area field , {class: 'Polaris-TextField__Input', placeholder: placeholder}%>
+          <div class="Polaris-TextField__Backdrop"></div>
+          <div aria-hidden="true" class="Polaris-TextField__Resizer">
+            <div class="Polaris-TextField__DummyInput"><br><br><br></div>
+            <div class="Polaris-TextField__DummyInput"><br></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,12 +3,15 @@
     <div class="Polaris-Labelled__LabelWrapper">
       <div class="Polaris-Label"><%= form.label field ,class: 'Polaris-Label__Text' %></div>
     </div>
-    <div class="Polaris-TextField">
-      <%= form.text_field field , {class: 'Polaris-TextField__Input', placeholder: placeholder} %>
-      <div class="Polaris-TextField__Backdrop"></div>
+    <div class="Polaris-Connected">
+      <div class="Polaris-Connected__Item Polaris-Connected__Item--primary">
+        <div class="Polaris-TextField Polaris-TextField--hasValue"> <%= form.text_field field , {class: 'Polaris-TextField__Input', placeholder: placeholder} %>
+          <div class="Polaris-TextField__Backdrop"></div>
+        </div>
+      </div>
     </div>
-    <% if help %>
-      <div class="Polaris-Labelled__HelpText"><%= help %></div>
+    <% if defined?(help_text) %>
+      <div class="Polaris-Labelled__HelpText"><%= help_text %></div>
     <% end %>
   </div>
 </div>
