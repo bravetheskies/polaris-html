@@ -1,6 +1,6 @@
 <div class="Polaris-FormLayout__Item">
   <div class="">
-    <label class="Polaris-Choice" for="<%="#{form.object.class.to_s.downcase}_#{field}"%>" >
+    <label class="Polaris-Choice" for="<%="#{form.object.class.name.underscore}_#{field}"%>" >
       <div class="Polaris-Choice__Control">
         <div class="Polaris-Checkbox">
           <%= form.check_box field, class: 'Polaris-Checkbox__Input' %>
