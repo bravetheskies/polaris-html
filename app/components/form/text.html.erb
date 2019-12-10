@@ -1,5 +1,5 @@
-<div class="Polaris-FormLayout__Item">
-  <div class="">
+<div class="Polaris-FormLayout__Item <%= class_extra_form_item %>">
+  <div class="<% if label_hidden -%>Polaris-Labelled--hidden<% end -%>">
     <div class="Polaris-Labelled__LabelWrapper">
       <div class="Polaris-Label"><%= form.label field ,class: 'Polaris-Label__Text' %></div>
     </div>
