@@ -1,41 +1,59 @@
 # Polaris::Html
-AvctionView components for Polaris 
+ActionView components for Shopify's Polaris components: https://polaris.shopify.com/
 
 ## Usage
-How to use my plugin.
+This gem is under active development. It is indeed as a drop-in solution for adding Polaris components to Ruby on Rails Shopify apps.
 
 ## Installation
 Add this line to your application's Gemfile:
 
 `gem 'polaris-html', git: 'https://github.com/bravetheskies/Polaris-html'`
 
-add actionview comonents:
-  https://github.com/github/actionview-component
-  Add this line to your application's Gemfile:
-    `gem "actionview-component"`
-  And then execute:
-    `$ bundle`
-  In config/application.rb, add:
-    `require "action_view/component/railtie"`
+Add actionview comonents: https://github.com/github/actionview-component
+    
+Add this line to your application's Gemfile:
+
+```ruby
+gem "actionview-component"
+```
+
+And then execute:
+```bash
+$ bundle
+```
+
+In `config/application.rb`, add:
+
+```bash
+require "action_view/component/railtie"
+```
 
 ## Components
 ### Forms components
-`textbox = form: , field: , placeholder: nil, help_text: nil, label_hidden: false, class_extra_form_item: ''
+```ruby
+textbox = form: , field: , placeholder: nil, help_text: nil, label_hidden: false, class_extra_form_item: ''
 <%= render(Form::Text, form: form , field: :email) %>
-<%= render(Form::Checkbox, form: form , label: 'Enabled', field: :enabled ) %>`
+<%= render(Form::Checkbox, form: form , label: 'Enabled', field: :enabled ) %>
+```
 
 tags - path , label -> defualt to delete path. Need to add as option
 
 ### Layouts 
-`<%= render(PolarisLayouts::AnnotatedSection, title: 'Operations', description: 'Past operations showing the alterations made ') do %>
-<% end %>`
+```ruby
+<%= render(PolarisLayouts::AnnotatedSection, title: 'Operations', description: 'Past operations showing the alterations made ') do %>
+<% end %>
+```
 
-### javascript
-  `select box - 
-  const selectboxes = document.querySelectorAll('.Polaris-Select__Input');
-  selectboxes.forEach((element) => {
-    element.parentNode.querySelector('.Polaris-Select__SelectedOption').textContent = element.value
-  });`
+### JavaScript
+
+#### Select Box
+
+```javascript
+const selectboxes = document.querySelectorAll('.Polaris-Select__Input');
+selectboxes.forEach((element) => {
+  element.parentNode.querySelector('.Polaris-Select__SelectedOption').textContent = element.value
+});
+```
 
 ## TODO
 Tags, change to lable and link.
