@@ -7,7 +7,9 @@ This gem is under active development. It is indeed as a drop-in solution for add
 ## Installation
 Add this line to your application's Gemfile:
 
-`gem 'polaris-html', git: 'https://github.com/bravetheskies/Polaris-html'`
+```ruby
+gem 'polaris-html', git: 'https://github.com/bravetheskies/Polaris-html'
+```
 
 Add actionview comonents: https://github.com/github/actionview-component
     
