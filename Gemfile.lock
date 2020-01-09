@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    polaris-html (0.1.4)
+    polaris-html (0.1.5)
       actionview-component
       rails (~> 6.0.1)
 
@@ -44,7 +44,7 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    actionview-component (1.5.3)
+    actionview-component (1.6.2)
     activejob (6.0.2.1)
       activesupport (= 6.0.2.1)
       globalid (>= 0.3.6)
@@ -70,7 +70,7 @@ GEM
     erubi (1.9.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    i18n (1.7.0)
+    i18n (1.8.1)
       concurrent-ruby (~> 1.0)
     loofah (2.4.0)
       crass (~> 1.0.2)
@@ -127,7 +127,7 @@ GEM
     sqlite3 (1.4.1)
     thor (1.0.1)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.6)
       thread_safe (~> 0.1)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
