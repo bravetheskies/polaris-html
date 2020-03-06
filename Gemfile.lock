@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    polaris-html (0.1.6)
+    polaris-html (0.1.7)
       actionview-component
       rails (~> 6.0.1)
 

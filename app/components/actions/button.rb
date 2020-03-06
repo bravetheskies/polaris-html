@@ -14,7 +14,7 @@ module Actions
 
     attr_reader :style, :disabled, :label, :submit, :url , :method
 
-    validates :style, inclusion: {in: STYLE_CLASS_MAPPINGS.keys}
+    #validates :style, inclusion: {in: STYLE_CLASS_MAPPINGS.keys}
     #todo cannot have submit and url?
     #<%= render(Actions::Button.new(style: :plain , label: 'Show', url: task_url(task))) %></td>
     #<%= render(Actions::Button.new(style: :plain , label: 'Edit', url: edit_task_url(task))) %></td>
