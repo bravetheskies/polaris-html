@@ -1,5 +1,5 @@
 require "polaris/html/engine"
-require "action_view/component/base"
+require "view_component/engine"
 
 module Polaris
   module Html
