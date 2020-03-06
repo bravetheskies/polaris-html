@@ -1,5 +1,5 @@
 module Form
-  class Password < ActionView::Component::Base
+  class Password < ViewComponent::Base
     attr_reader :form, :field, :placeholder, :help_text
     def initialize(form: , field: , placeholder: nil, help_text: nil)
       @form, @field, @placeholder, @help_text = form, field, placeholder, help_text

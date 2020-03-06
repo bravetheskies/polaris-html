@@ -1,6 +1,6 @@
 module Form
   
-  class CheckboxList < ActionView::Component::Base
+  class CheckboxList < ViewComponent::Base
 
     attr_reader :form, :field, :label
 

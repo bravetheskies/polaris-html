@@ -1,6 +1,6 @@
 module Titles
   
-  class Heading < ActionView::Component::Base
+  class Heading < ViewComponent::Base
     
     attr_reader :text
 

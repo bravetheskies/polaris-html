@@ -1,6 +1,6 @@
 module Actions
   
-  class Button < ActionView::Component::Base
+  class Button < ViewComponent::Base
     STYLE_CLASS_MAPPINGS = {
       default: "",
       primary: "Polaris-Button--primary",

@@ -1,5 +1,5 @@
 module PolarisLayouts
-  class AnnotatedSection < ActionView::Component::Base
+  class AnnotatedSection < ViewComponent::Base
     
     validates :content, presence: true
   

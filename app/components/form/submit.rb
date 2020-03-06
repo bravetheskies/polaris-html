@@ -1,5 +1,5 @@
 module Form
-  class Submit < ActionView::Component::Base
+  class Submit < ViewComponent::Base
     attr_reader :form, :text
     def initialize(form: , text: )
       @form, @text = form, text
