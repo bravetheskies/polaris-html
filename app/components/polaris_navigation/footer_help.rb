@@ -1,4 +1,4 @@
-module PolarisLayouts
+module PolarisNavigation
   class FooterHelp < ViewComponent::Base
 
   end
