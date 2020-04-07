@@ -46,6 +46,12 @@ tags - path , label -> defualt to delete path. Need to add as option
 <% end %>
 ```
 
+### Navigation
+```ruby
+<%= render(PolarisNavigation::FooterHelp) do %>
+<% end %>
+```
+
 ### JavaScript
 
 #### Select Box
