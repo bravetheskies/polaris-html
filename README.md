@@ -52,9 +52,30 @@ tags - path , label -> defualt to delete path. Need to add as option
 <% end %>
 ```
 
+### Select
+```ruby
+<%= render(Form::Select.new(form: form, field: :field_name, choices: Example.all.collect {|example| [example.name, example.id]})) %>
+```
+
+You will also need to add some Javascript to your `app/javascript/packs/application.js` to change the text in the select box. Example here:
+
+```javascript
+document.addEventListener("turbolinks:load", function() {
+   const selectboxes = document.querySelectorAll('.Polaris-Select__Input');
+   selectboxes.forEach((element) => {
+      element.parentNode.querySelector('.Polaris-Select__SelectedOption').textContent = element.options[element.selectedIndex].text
+      element.onchange = function(){
+         element.parentNode.querySelector('.Polaris-Select__SelectedOption').textContent = element.options[element.selectedIndex].text
+      }
+   });
+});
+```
+
 ### JavaScript
 
 #### Select Box
+
+Original select box javascript:
 
 ```javascript
 const selectboxes = document.querySelectorAll('.Polaris-Select__Input');
